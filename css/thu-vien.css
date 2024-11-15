@@ -1,0 +1,575 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Newsreader:ital,opsz@0,6..72;1,6..72&display=swap');
+body
+
+{
+	background: rgb(0,0,0);
+	color: rgba(0,0,0,.8);
+	font-family: "Mulish", cursive;
+  	font-weight: 400;
+  	font-style: normal;
+	font-size: 15px;
+	margin: 0
+}
+.font-normal01
+{  
+	font-family: "Newsreader", serif;
+	color: #FFFFFF
+}
+.font-normal02
+{  
+	font-family: "DM Serif Text", serif;
+}
+h1{ font-size: 4.5vw}
+
+@media (min-width:600px)
+{
+	h1{ font-size: 4vw}
+}
+
+@media (min-width:1000px)
+{
+	h1{ font-size: 4vw}
+}
+
+h2{ font-size: 3.5vw}
+h3{ font-size: 3vw;}
+h4{ font-size: 2.5vw}
+h5{ font-size: 2.5vw}
+h6{ font-size: 2vw}
+h7{ font-size: 1.80vw}
+h1,h2,h3,h4,h5,h6,h7,p{ margin-top: 0; margin-bottom: 5px}
+
+.container
+{
+	width: 80%;
+	margin: auto;
+	/*border: 1px solid red;*/
+	color: #fff
+}
+.container-1
+{
+	width: 90%;
+	margin: auto;
+}
+
+/* tao 1 hang cho cac cot */
+*{box-sizing: border-box}
+
+.row
+{
+	display: flex;
+	flex-wrap: wrap
+}
+.col-1 {width: 8.33%; }
+.col-2 {width: 16.66%; }
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"]
+{
+	padding: 15px;
+	/*border: 1px solid red*/
+}
+/*--------------- chia cot cho tablet - ipad-------*/
+@media (min-width:600px)
+		{
+		.col-md-1 {width: 8.33%; }
+		.col-md-2 {width: 16.66%; }
+		.col-md-3 {width: 25%;}
+		.col-md-4 {width: 33.33%;}
+		.col-md-5 {width: 41.66%;}
+		.col-md-6 {width: 50%;}
+		.col-md-7 {width: 58.33%;}
+		.col-md-8 {width: 66.66%;}
+		.col-md-9 {width: 75%;}
+		.col-md-10 {width: 83.33%;}
+		.col-md-11 {width: 91.66%;}
+		.col-md-12 {width: 100%;}
+		}
+@media (min-width:1000px)
+		{
+		.col-lg-1 {width: 8.33%; }
+		.col-lg-2 {width: 16.66%; }
+		.col-lg-3 {width: 25%;}
+		.col-lg-4 {width: 33.33%;}
+		.col-lg-5 {width: 41.66%;}
+		.col-lg-6 {width: 50%;}
+		.col-lg-7 {width: 58.33%;}
+		.col-lg-8 {width: 66.66%;}
+		.col-lg-9 {width: 75%;}
+		.col-lg-10 {width: 83.33%;}
+		.col-lg-11 {width: 91.66%;}
+		.col-lg-12 {width: 100%;}
+		}
+.text-center{ text-align: center}
+.text-end{ text-align: right}
+.text-start{ text-align: left}
+.img-100{ width: 100%; height: auto}
+.d-flex{ 
+			display: flex;
+			flex-wrap: wrap
+		}
+/* chia tach theo chieu ngang*/
+.justify-content-center{ justify-content: center}
+.justify-content-between{ justify-content:space-between}
+.justify-content-start{ justify-content:flex-start}
+.justify-content-end{ justify-content: flex-end}
+.justify-content-around{ justify-content: space-around}
+/*chia cach theo chieu doc ..*/		
+.align-items-center{ align-items: center}
+.align-items-end{ align-items: flex-end}
+.align-items-start{ align-items:flex-start}
+.align-items-stretch{ align-items:stretch}
+/*--- huong di cua cac item trong flex*/
+.flex-row{ flex-direction: row}
+.flex-row-reverse{ flex-direction: row-reverse}
+.flex-column{ flex-direction:column}
+.flex-column-reverse{ flex-direction:column-reverse}
+
+.container-header
+{
+	width: 100%;
+}
+@media (min-width:900px)
+{
+.container-header	
+{ 
+	width: 90%;
+	margin: auto;}
+}
+
+nav 
+{
+	background: #000; 
+	padding: 20px 0px 20px 0px; 
+}
+nav .container-header
+{
+	position: relative;
+	overflow: hidden;
+}
+nav .btn-toggle
+{
+	position: absolute;
+	right: 0;
+	top: 30px;
+}
+.logo img { display: block; margin: auto;}
+#menu 
+{
+	padding: 20px 0px 0px 0px;
+}
+#menu ul
+{
+	list-style: none;
+	padding: 0px;
+	margin: 0;
+}
+#menu ul li {position: relative}
+#menu ul li a {
+	color:#fff; 
+	text-decoration: none; 
+	display: block;
+	padding: 8px; 
+	}
+#dropdown-menu
+{
+	background: #ddd;
+	color: #000;
+	display: none;
+}
+#dropdown-menu a
+{
+	padding-left: 0px;  
+}
+#menu {display: none}
+@media (min-width:900px)
+{
+	nav .container-header { 
+							display: flex; 
+							justify-content: space-between; 
+							align-items: flex-end;
+						  }
+	
+		.btn-toggle 	  {	display: none; }
+		#menu 			  { display: block !important;}
+		#menu ul 		  { display: flex; 
+							margin:0; }
+	
+		
+	
+		#dropdown-menu	  { position: absolute;
+							flex-direction: column;
+							text-align: center;
+							z-index: 999;
+							left:0;
+							top:100%; border:10px yellow solid
+								}
+	    #menu ul li a	  { width: 140px;  color:white}
+		.logo img 		  { padding-left: 30px;}
+}
+.text-white {color: #fff}
+.banner
+{
+	position: relative;
+}
+.banner-caption
+{
+	position: absolute;
+	width: 45%;
+	left: 46%; top: 20%;
+	color: #fff;
+	/*border: 1px solid red*/
+}
+.img-portrait
+{
+	width: 80%;
+	height: auto;
+	margin-left: -200px;
+	padding: 20px 0px 0px 0px
+}
+
+@media (max-width:900px)
+{
+	.banner
+	{
+		position: relative;
+	}
+	.img-portrait
+	{
+		width: 100%;
+		height: auto;
+		margin-left: 20px;
+	}
+	.banner-caption
+	{
+		position: static;
+		width: 100%;
+		padding: 50px;
+	}
+	.banner-caption p
+	{
+		text-align: center;
+	}
+}
+@media (max-width:600px)
+{
+	.banner
+	{
+		position: relative;
+	}
+	.img-portrait
+	{
+		width: 100%;
+		height: auto;
+		margin-left: 10px;
+	}
+	.banner-caption
+{
+		position: static;
+		width: 100%;
+		padding: 15px;
+}	
+	.banner-caption p
+	{
+		text-align: center;
+	}
+	
+}
+.button {
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 7px 7px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: black; 
+  color: #fdbb2d; 
+  border: 2px solid #22c1c3;
+  border-radius: 10px;
+  padding: 18px 11px;
+}
+
+.button1:hover {
+  background-color: #22c1c3;
+  color: white;
+}
+
+.button2 {
+  background-color: black; 
+  color: #fdbb2d; 
+  border: 2px solid #22c1c3;
+  border-radius: 10px;
+  padding: 18px 14px;
+}
+
+.button2:hover {
+  background-color: #22c1c3;
+  color: white;
+}
+.button3 {
+  background-color: black; 
+  color: #fdbb2d; 
+  border: 2px solid #22c1c3;
+  border-radius: 10px;
+  padding: 18px 14px;
+}
+
+.button3:hover {
+  background-color: #22c1c3;
+  color: white;
+}
+.text-color1
+{
+	color: #22c1c3;
+}
+.text-color-head
+{
+	color: #fdbb2d;
+}
+.buttonn {
+  background: #000;
+  border: none;
+  padding: 0px;
+  display: inline-block;
+  margin: 6px 6px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px 
+}
+.button1a { 
+  color: #fdbb2d; 
+  /*border: 1px solid #fff;*/
+  border-radius: 8px;
+  padding: 0px 1px 1px 2px;
+}
+
+.button1a:hover {
+  background-color: #22c1c3;
+  color: white;
+}
+.button1b { 
+  color: #fdbb2d; 
+  /*border: 2px solid #fff;*/
+  border-radius: 8px;
+  padding: 2px 2px 0px 2px;
+}
+
+.button1b:hover {
+  background-color: #22c1c3;
+  color: white;
+}
+.button1c { 
+  color: #fdbb2d; 
+  /*border: 2px solid #fff;*/
+  border-radius: 8px;
+  padding: 2px 1px 0px 2px;
+}
+
+.button1c:hover {
+  background-color: #22c1c3;
+  color: white;
+}
+.button2a { 
+  color: #fdbb2d; 
+  /*border: 2px solid #fff;*/
+  border-radius: 8px;
+  padding: 2px 2px 0px 2px;
+}
+
+.button2a:hover {
+  background-color: #22c1c3;
+  color: white;
+}
+.button2b { 
+  color: #fdbb2d; 
+  /*border: 2px solid #fff;*/
+  border-radius: 8px;
+  padding: 2px 2px 0px 2px;
+}
+
+.button2b:hover {
+  background-color: #22c1c3;
+  color: white;
+}
+
+/*my services*/
+.paint-brush
+{
+	position: relative;
+}
+.text-1
+{
+	position: absolute;
+	z-index: 999;
+}
+.color-black
+{
+	color: #000;
+}
+.vien
+{
+	position: relative;
+	border: 1px solid #22c1c3 ;
+	padding: 20px;
+	border-radius: 10px;
+	min-height: 220px;
+}
+.vien p 
+{
+	margin: 15px;
+}
+.vien2
+{
+	position: relative;
+	border: 1px solid #22c1c3 ;
+	padding: 20px;
+	min-height: 220px;
+	border-radius: 10px;
+}
+.vien2 p 
+{
+	margin-top: 15px
+	
+}
+.img-90{width:50%; height: auto}
+@media (max-width:900px)
+{
+	.img-90 {height:auto;}
+	.container .text-1 {font-size: 200%;}
+	.container .text-2 {font-size: 20px;}
+	
+}
+@media (max-width:600px)
+{
+	.container .text-1 {font-size: 120%;}
+	.container .text-2 {font-size: 18px;}
+	.container .text-3 {font-size: 20px;}
+}
+.text-inside {padding: 14px}
+
+
+/*SLIDE-SHOW*/
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*Kết thúc phần sile-show*/
+
+.container-full
+{
+	width: 100%;
+	height: auto;
+	
+}
+.text-color2
+{
+	color: #D8BA4C
+}
+.color-white
+{
+	color: #fff;
+}
+.img-70{width:40%; height: auto}
